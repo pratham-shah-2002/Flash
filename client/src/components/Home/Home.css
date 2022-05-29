@@ -1,0 +1,24 @@
+.home {
+  height: var(--home-height);
+  background-color: var(--bg-home);
+  display: flex;
+  margin: 0 25px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.left {
+  flex: 20%;
+  max-width: 321px;
+}
+.center {
+  flex: 50%;
+}
+
+.right {
+  flex: 25%;
+}
+ 
+.profile {
+  flex: 75%;
+}

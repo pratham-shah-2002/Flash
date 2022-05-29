@@ -1,0 +1,55 @@
+.navbar-container {
+  height: var(--nav-height);
+  width: 100vw;
+}
+.navbar-right {
+  width: 32%;
+}
+.navbar-app-info {
+  justify-self: flex-start;
+  width: 120%;
+  height: 5vh;
+}
+
+.navbar-app-info h2 {
+  font-weight: 300;
+}
+
+.navbar-search {
+  width: 60%;
+  background-color: var(--nav-search);
+  height: 5vh;
+  align-items: center;
+  border-radius: 0.6rem;
+  padding: 10px;
+}
+
+.navbar-search input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  height: 4vh;
+  color: gray;
+  font-weight: 800;
+  margin-left: 20px;
+}
+.navbar-create-btn {
+  background-color: var(--blue);
+  color: white;
+  height: 5vh;
+  font-size: 15px;
+  width: 17%;
+  border-radius: 9px;
+}
+.navbar-create-btn > img {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(150deg)
+    brightness(101%) contrast(102%);
+  height: 18px;
+}
+
+.navbar-user-photo > img {
+  height: 5vh;
+  object-fit: cover;
+  width: 5vh;
+  border-radius: 12px;
+}

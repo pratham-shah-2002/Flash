@@ -1,0 +1,44 @@
+.request {
+  width: var(--rightbar-width);
+  background: white;
+  border-radius: 14px;
+  padding: 15px;
+  box-shadow: var(--shadow);
+  margin-top: 20px;
+  /* margin-bottom: 20px; */
+}
+.requester-img img {
+  object-fit: cover;
+  border-radius: 12px;
+  margin-right: 10px;
+}
+.requester-info {
+  color: #26394e;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.requester-info span {
+  font-weight: 800;
+}
+
+.request button {
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.accept-request-btn {
+  background-color: var(--blue);
+  color: white;
+  border: none;
+}
+.reject-request-btn {
+  background: transparent;
+  color: var(--dblue);
+  border: 1px solid var(--lgray);
+}
+/* .request-btn {
+  align-self: flex-end;
+} */

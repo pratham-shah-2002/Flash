@@ -1,0 +1,125 @@
+.post {
+  width: var(--middlebar-width);
+  background: white;
+  box-shadow: var(--shadow);
+  padding: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.post > * {
+  font-family: "Poppins", sans-serif;
+}
+.poster {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.poster img {
+  border-radius: 12px;
+}
+.poster-username {
+  margin-left: 13px;
+  height: 60px;
+}
+/* .poster-username > * {
+  font-family: "Poppins", sans-serif;
+} */
+.user-name-post {
+  /* font-family: "Poppins", sans-serif; */
+  /* font-family: "Open sans", sans-serif; */
+  color: var(--dblue);
+  font-weight: bolder;
+  font-size: 18px;
+}
+.post-time {
+  color: var(--lgray);
+  font-weight: 300;
+}
+.post-caption {
+  color: var(--lblue);
+}
+.post-img {
+  border-radius: 15px;
+  overflow: hidden;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.post-img img {
+  width: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.like-cnt {
+  font-family: "Open sans", sans-serif;
+}
+
+.post-like-comment-btn {
+  width: 100%;
+}
+.like-btn:focus {
+  transform: scale(1.1);
+}
+#heartPath {
+  fill: white;
+  stroke: #000;
+  transition: all 100ms ease;
+}
+.animate {
+  animation: animateHeart 250ms ease-in;
+}
+.animatePath {
+  fill: red;
+  stroke: red;
+}
+.normalPath {
+  fill: white;
+  stroke: black;
+}
+.deanimate {
+  animation: animateHeart 250ms ease-in;
+}
+.comment-btn {
+  margin-left: 5px;
+}
+@keyframes animateHeart {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.comment-section {
+  width: 100%;
+}
+
+.post-comment {
+  width: 100%;
+}
+
+.container-comment-section {
+  width: 100%;
+  margin: 20px 0;
+}
+.user-img-comment-section img {
+  border-radius: 50%;
+}
+.post-comment-btn {
+  display: block;
+  margin-left: auto;
+}
+
+.write-comment input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--dgray);
+  margin-left: 10px;
+  width: 200%;
+  height: 30px;
+  /* background: var(--dblue); */
+}

@@ -1,0 +1,26 @@
+.rightbar {
+  height: 100%;
+  overflow: auto;
+}
+
+.request-section {
+  width: 100%;
+  /* padding: 20px; */
+}
+
+.rightbar-heading {
+  color: var(--lgray);
+  width: var(--rightbar-width);
+  text-align: left;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.friends-list {
+  width: var(--rightbar-width);
+  padding: 20px;
+  background: white;
+  box-shadow: var(--shadow);
+  border-radius: 12px;
+}

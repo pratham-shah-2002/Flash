@@ -1,0 +1,97 @@
+.leftbar {
+  height: 100%;
+  /* background: pink; */
+}
+.user-info {
+  width: max-content;
+  width: var(--leftbar-width);
+  padding: 10px 0;
+  background: rgb(255, 255, 255);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  height: 12vh;
+}
+.user-info-container {
+  height: 45px;
+  width: 85%;
+}
+.user-name {
+  height: 90%;
+}
+.user-name h4 {
+  color: var(--dblue);
+}
+.user-name p {
+  color: var(--dgray);
+}
+.user-image {
+  height: 45px;
+  width: max-content;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.user-image img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+
+.user-info p {
+  font-weight: light;
+  font-size: small;
+}
+.page-navigation {
+  width: var(--leftbar-width);
+  background-color: white;
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.page-navigation ul li {
+  list-style: none;
+  padding: 15px 0;
+  color: gray;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.list-icon {
+  min-width: 20px;
+  margin-right: 25px;
+  margin-left: 20px;
+}
+
+.home-icon + p {
+  color: var(--blue);
+}
+
+.advertisment {
+  height: 300px;
+  width: var(--leftbar-width);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  position: relative;
+  background: white;
+}
+.advertisment::after {
+  content: "New Features coming soon";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: rgb(41, 40, 40);
+  /* color: white; */
+  font-size: xx-large;
+  font-weight: 700;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.ad-img {
+  width: var(--leftbar-width);
+  height: 300px;
+  object-fit: cover;
+}
