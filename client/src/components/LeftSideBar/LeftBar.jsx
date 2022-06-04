@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import "./LeftBar.css";
 
-const LeftBar = ({profile}) => {
+const LeftBar = ({ profile }) => {
   const [clicked, setClicked] = useState(1);
   const List = styled.li`
   &{
@@ -32,11 +32,19 @@ const LeftBar = ({profile}) => {
   `;
   const navigate = useNavigate();
   return (
-    <div className="leftbar df ac sa fdc" style={profile && {
-        flexDirection: "row"
-      }}>
+    <div
+      className="leftbar df ac sa fdc"
+      style={
+        profile && {
+          flexDirection: "row",
+        }
+      }
+    >
       <div className="user-info df ac sa">
-        <div className="user-info-container df ac se">
+        <div
+          className="user-info-container df ac se"
+          onClick={() => navigate("/profile")}
+        >
           <div className="user-image">
             <img src="/assets/people2.jpg" alt="profile" />
           </div>
@@ -54,7 +62,7 @@ const LeftBar = ({profile}) => {
             clicked={{ clicked, key: 1 }}
             onClick={() => {
               setClicked(1);
-              navigate('/');
+              navigate("/");
             }}
             className="df ac cp"
           >
@@ -77,7 +85,7 @@ const LeftBar = ({profile}) => {
             clicked={{ clicked, key: 3 }}
             onClick={() => {
               setClicked(3);
-              navigate('/profile');
+              navigate("/profile");
             }}
             className="df ac cp"
           >
